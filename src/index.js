@@ -8,6 +8,7 @@ import './style/index.css';
 import App from './containers/App';
 import 'tachyons';
 import { searchRobots, getRobotsReducer } from './reducers';
+import * as serviceWorker from './serviceWorker';
 
 const logger = createLogger();
 const rootReducer = combineReducers({ searchRobots, getRobotsReducer });
@@ -15,8 +16,6 @@ const store = createStore(
   rootReducer,
   applyMiddleware(thunkMiddleWare, logger)
 );
-
-import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Provider store={store}>
