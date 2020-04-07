@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://chenmargalit.github.io/robo_pwa",
+  "start_url": "./index.html",
   "theme_color": "#808000",
   "background_color": "#8B0000",
   "display": "standalone"
